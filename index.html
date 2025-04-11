@@ -1,88 +1,139 @@
-
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlockUnlock Pro</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background: #000;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            padding: 20px;
-        }
-        .section {
-            margin-bottom: 30px;
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        h1, h2 {
-            color: #222;
-        }
-        .contact {
-            font-size: 1.2em;
-        }
-        footer {
-            background: #000;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlockUnlock Pro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #1e1e2f;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    main {
+      padding: 3rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 2rem;
+      color: #1e1e2f;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .btn {
+      background-color: #007bff;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .service-card {
+      background: #fff;
+      border-radius: 0.75rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>BlockUnlock Pro</h1>
-        <p>Sblocca le tue transazioni crypto in sicurezza. 24/7, in modo riservato.</p>
-    </header>
-    <div class="container">
-        <div class="section">
-            <h2>Servizi Offerti</h2>
-            <ul>
-                <li>Sblocco BTC, USDT, ETH</li>
-                <li>Analisi hash e rete</li>
-                <li>Commissione di sblocco rapida</li>
-                <li>Supporto Telegram/WhatsApp</li>
-                <li>Ricevuta firmata con dettagli e logo</li>
-                <li>Garanzia di riservatezza e privacy</li>
-            </ul>
-        </div>
-        <div class="section contact">
-            <h2>Contattaci Subito</h2>
-            <p><strong>Telegram:</strong> @BlockUnlockSupport</p>
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/393333333333">Clicca per aprire</a></p>
-            <p><strong>Email:</strong> blockunlock@proton.me</p>
-            <p><strong>Orari:</strong> 9:00 - 23:00 | 7 giorni su 7</p>
-        </div>
-        <div class="section">
-            <h2>Ricevuta Esempio</h2>
-            <pre>
-BlockUnlock Pro  
-RICEVUTA N. 038/BU  
-Data: 10/04/2025  
-Cliente: V. Liso  
-Transazione: 0.43 BTC  
-Fee di sblocco: €3.000  
-Wallet: Blockchain.com  
-Note: Unlock immediato dopo saldo fee
-Firma operatore: ____________
-            </pre>
-        </div>
+  <header>
+    <h1>BlockUnlock Pro</h1>
+    <nav>
+      <p>Soluzione professionale per il tuo sblocco smart.</p>
+    </nav>
+  </header>
+  <main>
+    <h1>Benvenuto!</h1>
+    <p>Questa è la tua homepage pronta per essere pubblicata su GitHub Pages. Personalizzala come preferisci!</p>
+    <a href="#servizi" class="btn">Scopri i nostri servizi</a>
+
+    <h2 id="servizi">I nostri Servizi</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>🔐 Recupero Crypto</h3>
+        <p>Assistenza per recuperare criptovalute bloccate o inaccessibili.</p>
+      </div>
+      <div class="service-card">
+        <h3>💰 Sblocco Wallet</h3>
+        <p>Sblocco rapido e sicuro di wallet con saldo congelato o in sospeso.</p>
+      </div>
+      <div class="service-card">
+        <h3>📦 Verifica Transazioni</h3>
+        <p>Analisi e conferma dello stato delle tue transazioni in blockchain.</p>
+      </div>
+      <div class="service-card">
+        <h3>🧠 Supporto Blockchain</h3>
+        <p>Consulenza tecnica su problemi legati a blockchain e crypto-assets.</p>
+      </div>
     </div>
-    <footer>
-        &copy; 2025 BlockUnlock Pro. Tutti i diritti riservati.
-    </footer>
+  </main>
+
+  <footer>
+    &copy; 2025 BlockUnlock Pro. Tutti i diritti riservati.
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/393335642000" target="_blank" title="Chatta con noi su WhatsApp">
+    💬
+  </a>
 </body>
 </html>
