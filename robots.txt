@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://thebestai-hub.github.io/blockunlock-pro/sitemap.xml
