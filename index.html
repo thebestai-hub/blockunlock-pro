@@ -1,72 +1,134 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BlockUnlock Pro - Soluzioni Blockchain</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlockUnlock Pro</title>
   <style>
     body {
-      background-color: #f8f9fa;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
     }
-    .hero {
-      background-color: #0d6efd;
+    header {
+      background-color: #007bff;
       color: white;
-      padding: 60px 0;
+      padding: 10px;
       text-align: center;
     }
-    .nav-tabs .nav-link.active {
-      background-color: #0d6efd;
+    nav {
+      background-color: #ffffff;
+      padding: 10px;
+      display: flex;
+      gap: 20px;
+      border-bottom: 1px solid #ddd;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #007bff;
+      padding: 5px 10px;
+    }
+    nav a.active {
+      border-bottom: 3px solid #007bff;
+      font-weight: bold;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #007bff;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+      padding: 20px;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
       color: white;
+      padding: 12px 20px;
+      border-radius: 50px;
+      font-size: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+      z-index: 999;
+      transition: background-color 0.3s ease;
+    }
+    .whatsapp-float:hover {
+      background-color: #1ebe57;
     }
   </style>
 </head>
 <body>
-  <header class="hero">
-    <h1>BlockUnlock Pro</h1>
-    <p>Esperti nel recupero e nella gestione di asset blockchain</p>
+
+  <header>
+    <h1>Esperti nel recupero e nella gestione di asset blockchain</h1>
   </header>
 
-  <main class="container my-5">
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="chi-siamo-tab" data-bs-toggle="tab" data-bs-target="#chi-siamo" type="button" role="tab">Chi Siamo</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="servizi-tab" data-bs-toggle="tab" data-bs-target="#servizi" type="button" role="tab">Servizi</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="esempi-tab" data-bs-toggle="tab" data-bs-target="#esempi" type="button" role="tab">Esempi</button>
-      </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active p-4" id="chi-siamo" role="tabpanel">
-        <h3>Chi siamo</h3>
-        <p>Siamo un team di professionisti con anni di esperienza nella blockchain, sicurezza informatica e recupero di criptovalute. Offriamo assistenza su misura a privati e aziende che hanno perso accesso ai propri wallet o asset digitali.</p>
-      </div>
-      <div class="tab-pane fade p-4" id="servizi" role="tabpanel">
-        <h3>Servizi Offerti</h3>
-        <ul>
-          <li>Recupero accesso a wallet persi o bloccati (es. MetaMask, TrustWallet, Ledger)</li>
-          <li>Analisi di transazioni e monitoraggio su blockchain pubbliche</li>
-          <li>Consulenze su smart contract e audit di sicurezza</li>
-          <li>Servizio antifrode per casi di scam o phishing su criptovalute</li>
-        </ul>
-      </div>
-      <div class="tab-pane fade p-4" id="esempi" role="tabpanel">
-        <h3>Esempi Realistici</h3>
-        <p><strong>Esempio 1:</strong> Un utente ha perso la sua seed phrase. Abbiamo recuperato l’accesso tramite wallet backup e analisi della derivazione delle chiavi.</p>
-        <p><strong>Esempio 2:</strong> Un cliente è stato truffato su una dApp. Abbiamo tracciato i fondi su Etherscan e fornito assistenza legale con le prove digitali.</p>
-      </div>
-    </div>
+  <nav>
+    <a href="#chi-siamo">Chi Siamo</a>
+    <a href="#servizi">Servizi</a>
+    <a href="#ultimi-casi">Ultimi Casi</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contattaci">Contattaci</a>
+  </nav>
+
+  <main>
+    <section id="chi-siamo">
+      <h2>Chi Siamo</h2>
+      <p>Siamo un team di esperti in tecnologia blockchain, sicurezza informatica e investigazioni digitali. Aiutiamo utenti e aziende a recuperare asset persi, tracciando fondi e offrendo supporto tecnico-legale completo.</p>
+    </section>
+
+    <section id="servizi">
+      <h2>Servizi</h2>
+      <ul>
+        <li>Recupero wallet e chiavi private perse</li>
+        <li>Indagini su truffe e frodi crypto</li>
+        <li>Analisi tecnica blockchain (Etherscan, BTC Explorer...)</li>
+        <li>Supporto legale per denunce e recupero fondi</li>
+      </ul>
+    </section>
+
+    <section id="ultimi-casi">
+      <h2>Ultimi Casi</h2>
+      <p><strong>A. Bianchi:</strong> Seed phrase smarrita. Recuperato accesso tramite wallet backup.</p>
+      <p><strong>F. Spano:</strong> Truffa DeFi. Tracciamento fondi e assistenza legale con prove digitali.</p>
+    </section>
+
+    <section id="faq">
+      <h2>Domande Frequenti (FAQ)</h2>
+      <p><strong>Quanto tempo serve per recuperare un wallet?</strong><br>Dipende dal caso. In media da 3 a 10 giorni lavorativi.</p>
+      <p><strong>È garantito il recupero?</strong><br>Offriamo una valutazione gratuita per stimare la possibilità di successo.</p>
+      <p><strong>Collaborate con le autorità?</strong><br>Sì, quando necessario, collaboriamo con forze dell’ordine e consulenti legali.</p>
+    </section>
+
+    <section id="contattaci">
+      <h2>Contattaci</h2>
+      <p>📧 Email: <a href="mailto:blockunlockpro@proton.me">blockunlockpro@proton.me</a></p>
+      <p>💬 WhatsApp: <a href="https://wa.me/447727818228" target="_blank">+44 7727 818228</a></p>
+      <p>📍 Telegram: <a href="https://t.me/blockunlockpro" target="_blank">@blockunlockpro</a></p>
+    </section>
   </main>
 
-  <footer class="text-center p-3 bg-light">
-    <small>&copy; 2025 BlockUnlock Pro - Tutti i diritti riservati</small>
+  <footer>
+    © 2025 BlockUnlock Pro - Tutti i diritti riservati
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <a href="https://wa.me/447727818228" class="whatsapp-float" target="_blank" title="Scrivici su WhatsApp">
+    💬 Chat WhatsApp
+  </a>
+
 </body>
 </html>
