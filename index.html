@@ -1,134 +1,106 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BlockUnlock Pro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlockUnlock-Pro</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      background-color: #0d1b2a;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #e0e1dd;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
     }
+
     header {
-      background-color: #007bff;
-      color: white;
-      padding: 10px;
+      padding: 30px 0;
       text-align: center;
+      background: #132a3e;
+      border-bottom: 2px solid #3aff6a;
+      box-shadow: 0 0 20px #3aff6a88;
     }
-    nav {
-      background-color: #ffffff;
-      padding: 10px;
-      display: flex;
-      gap: 20px;
-      border-bottom: 1px solid #ddd;
-      justify-content: center;
-      flex-wrap: wrap;
+
+    .logo-icon {
+      font-size: 3rem;
+      color: #3aff6a;
+      text-shadow: 0 0 15px #3aff6a;
+      animation: pulse 1.5s ease-in-out infinite alternate;
     }
-    nav a {
-      text-decoration: none;
-      color: #007bff;
-      padding: 5px 10px;
+
+    .logo-name {
+      font-size: 2.5rem;
+      margin: 10px 0 5px;
+      color: #e0e1dd;
+      text-shadow: 0 0 8px #e0e1dd;
     }
-    nav a.active {
-      border-bottom: 3px solid #007bff;
-      font-weight: bold;
+
+    .logo-subtitle {
+      font-size: 1.2rem;
+      color: #a9bcd0;
     }
+
     main {
       max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
+      line-height: 1.6;
     }
-    section {
-      margin-bottom: 40px;
-    }
+
     h2 {
-      color: #007bff;
+      color: #3aff6a;
+      margin-top: 30px;
+      border-left: 4px solid #3aff6a;
+      padding-left: 10px;
     }
+
     footer {
       text-align: center;
-      font-size: 0.9em;
-      color: #777;
       padding: 20px;
+      background-color: #132a3e;
+      border-top: 2px solid #3aff6a;
+      margin-top: 50px;
+      color: #a9bcd0;
     }
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 50px;
-      font-size: 16px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      text-decoration: none;
-      z-index: 999;
-      transition: background-color 0.3s ease;
-    }
-    .whatsapp-float:hover {
-      background-color: #1ebe57;
+
+    @keyframes pulse {
+      from {
+        text-shadow: 0 0 10px #3aff6a;
+        transform: scale(1);
+      }
+      to {
+        text-shadow: 0 0 25px #3aff6a, 0 0 50px #3aff6a;
+        transform: scale(1.05);
+      }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Esperti nel recupero e nella gestione di asset blockchain</h1>
+    <div class="logo-icon">🔓</div>
+    <div class="logo-name">BlockUnlock-Pro</div>
+    <div class="logo-subtitle">Digital Recovery & Blockchain Security</div>
   </header>
 
-  <nav>
-    <a href="#chi-siamo">Chi Siamo</a>
-    <a href="#servizi">Servizi</a>
-    <a href="#ultimi-casi">Ultimi Casi</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contattaci">Contattaci</a>
-  </nav>
-
   <main>
-    <section id="chi-siamo">
-      <h2>Chi Siamo</h2>
-      <p>Siamo un team di esperti in tecnologia blockchain, sicurezza informatica e investigazioni digitali. Aiutiamo utenti e aziende a recuperare asset persi, tracciando fondi e offrendo supporto tecnico-legale completo.</p>
-    </section>
+    <h2>Chi Siamo</h2>
+    <p>Siamo specialisti nella sicurezza digitale e nel recupero fondi bloccati tramite tecnologia blockchain. Offriamo supporto professionale, trasparente e certificato per utenti privati e aziende.</p>
 
-    <section id="servizi">
-      <h2>Servizi</h2>
-      <ul>
-        <li>Recupero wallet e chiavi private perse</li>
-        <li>Indagini su truffe e frodi crypto</li>
-        <li>Analisi tecnica blockchain (Etherscan, BTC Explorer...)</li>
-        <li>Supporto legale per denunce e recupero fondi</li>
-      </ul>
-    </section>
+    <h2>Servizi Offerti</h2>
+    <ul>
+      <li>Recupero wallet bloccati</li>
+      <li>Recupero transazioni fallite</li>
+      <li>Supporto per contenziosi blockchain</li>
+      <li>Assistenza legale su cripto e digitale</li>
+    </ul>
 
-    <section id="ultimi-casi">
-      <h2>Ultimi Casi</h2>
-      <p><strong>A. Bianchi:</strong> Seed phrase smarrita. Recuperato accesso tramite wallet backup.</p>
-      <p><strong>F. Spano:</strong> Truffa DeFi. Tracciamento fondi e assistenza legale con prove digitali.</p>
-    </section>
-
-    <section id="faq">
-      <h2>Domande Frequenti (FAQ)</h2>
-      <p><strong>Quanto tempo serve per recuperare un wallet?</strong><br>Dipende dal caso. In media da 3 a 10 giorni lavorativi.</p>
-      <p><strong>È garantito il recupero?</strong><br>Offriamo una valutazione gratuita per stimare la possibilità di successo.</p>
-      <p><strong>Collaborate con le autorità?</strong><br>Sì, quando necessario, collaboriamo con forze dell’ordine e consulenti legali.</p>
-    </section>
-
-    <section id="contattaci">
-      <h2>Contattaci</h2>
-      <p>📧 Email: <a href="mailto:blockunlockpro@proton.me">blockunlockpro@proton.me</a></p>
-      <p>💬 WhatsApp: <a href="https://wa.me/447727818228" target="_blank">+44 7727 818228</a></p>
-      <p>📍 Telegram: <a href="https://t.me/blockunlockpro" target="_blank">@blockunlockpro</a></p>
-    </section>
+    <h2>Contatti</h2>
+    <p>Email: <a href="mailto:info@blockunlock-pro.com" style="color:#3aff6a">info@blockunlock-pro.com</a><br>
+       WhatsApp: <a href="https://wa.me/447727818227" style="color:#3aff6a">+44 7727 818228</a></p>
   </main>
 
   <footer>
-    © 2025 BlockUnlock Pro - Tutti i diritti riservati
+    © 2025 BlockUnlock-Pro. Tutti i diritti riservati.
   </footer>
-
-  <a href="https://wa.me/447727818228" class="whatsapp-float" target="_blank" title="Scrivici su WhatsApp">
-    💬 Chat WhatsApp
-  </a>
-
 </body>
 </html>
