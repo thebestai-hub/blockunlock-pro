@@ -1,106 +1,105 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BlockUnlock-Pro</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlockUnlock-Pro | Safe Recovery of Digital Assets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      background-color: #0d1b2a;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #e0e1dd;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
     }
-
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+    }
     header {
-      padding: 30px 0;
-      text-align: center;
-      background: #132a3e;
-      border-bottom: 2px solid #3aff6a;
-      box-shadow: 0 0 20px #3aff6a88;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background-color: #0f172a;
+      border-bottom: 1px solid #334155;
     }
-
-    .logo-icon {
+    header img {
+      height: 40px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #cbd5e1;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #38bdf8;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 10% 60px;
+    }
+    .hero h1 {
       font-size: 3rem;
-      color: #3aff6a;
-      text-shadow: 0 0 15px #3aff6a;
-      animation: pulse 1.5s ease-in-out infinite alternate;
+      font-weight: 700;
+      margin-bottom: 20px;
     }
-
-    .logo-name {
-      font-size: 2.5rem;
-      margin: 10px 0 5px;
-      color: #e0e1dd;
-      text-shadow: 0 0 8px #e0e1dd;
-    }
-
-    .logo-subtitle {
+    .hero p {
       font-size: 1.2rem;
-      color: #a9bcd0;
+      color: #94a3b8;
+      margin-bottom: 30px;
     }
-
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
+    .hero button {
+      background-color: #38bdf8;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 1rem;
+      color: #0f172a;
+      cursor: pointer;
+      font-weight: bold;
     }
-
-    h2 {
-      color: #3aff6a;
-      margin-top: 30px;
-      border-left: 4px solid #3aff6a;
-      padding-left: 10px;
-    }
-
-    footer {
+    .devices {
+      padding: 40px 10%;
       text-align: center;
-      padding: 20px;
-      background-color: #132a3e;
-      border-top: 2px solid #3aff6a;
-      margin-top: 50px;
-      color: #a9bcd0;
     }
-
-    @keyframes pulse {
-      from {
-        text-shadow: 0 0 10px #3aff6a;
-        transform: scale(1);
-      }
-      to {
-        text-shadow: 0 0 25px #3aff6a, 0 0 50px #3aff6a;
-        transform: scale(1.05);
-      }
+    .devices img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    footer {
+      background-color: #0f172a;
+      padding: 30px 10%;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #94a3b8;
+      border-top: 1px solid #334155;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo-icon">🔓</div>
-    <div class="logo-name">BlockUnlock-Pro</div>
-    <div class="logo-subtitle">Digital Recovery & Blockchain Security</div>
+    <img src="logo_blockunlock.png" alt="BlockUnlock-Pro Logo" />
+    <nav>
+      <a href="#">Servizi</a>
+      <a href="#">Chi Siamo</a>
+      <a href="#">Contatta</a>
+      <a href="#">FAQ</a>
+      <a href="#">Risorse</a>
+    </nav>
   </header>
-
-  <main>
-    <h2>Chi Siamo</h2>
-    <p>Siamo specialisti nella sicurezza digitale e nel recupero fondi bloccati tramite tecnologia blockchain. Offriamo supporto professionale, trasparente e certificato per utenti privati e aziende.</p>
-
-    <h2>Servizi Offerti</h2>
-    <ul>
-      <li>Recupero wallet bloccati</li>
-      <li>Recupero transazioni fallite</li>
-      <li>Supporto per contenziosi blockchain</li>
-      <li>Assistenza legale su cripto e digitale</li>
-    </ul>
-
-    <h2>Contatti</h2>
-    <p>Email: <a href="mailto:info@blockunlock-pro.com" style="color:#3aff6a">info@blockunlock-pro.com</a><br>
-       WhatsApp: <a href="https://wa.me/447727818227" style="color:#3aff6a">+44 7727 818228</a></p>
-  </main>
-
+  <section class="hero">
+    <h1>Recupero Sicuro di Asset Digitali</h1>
+    <p>Specializzati in BTC, ETH, NFT e Web3 • Supporto Legale & Tecnico</p>
+    <button>Richiedi Recupero</button>
+  </section>
+  <section class="devices">
+    <img src="devices_mockup.png" alt="Strumenti BlockUnlock-Pro" />
+  </section>
   <footer>
-    © 2025 BlockUnlock-Pro. Tutti i diritti riservati.
+    © 2025 BlockUnlock-Pro. Tutti i diritti riservati. | Tel: +44 7727 818228 | info@blockunlock-pro.com
   </footer>
 </body>
 </html>
