@@ -1,105 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BlockUnlock-Pro | Safe Recovery of Digital Assets</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-    body {
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-      color: white;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 10%;
-      background-color: #0f172a;
-      border-bottom: 1px solid #334155;
-    }
-    header img {
-      height: 40px;
-    }
-    nav a {
-      margin: 0 15px;
-      color: #cbd5e1;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    nav a:hover {
-      color: #38bdf8;
-    }
-    .hero {
-      text-align: center;
-      padding: 80px 10% 60px;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      color: #94a3b8;
-      margin-bottom: 30px;
-    }
-    .hero button {
-      background-color: #38bdf8;
-      border: none;
-      padding: 15px 30px;
-      border-radius: 8px;
-      font-size: 1rem;
-      color: #0f172a;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    .devices {
-      padding: 40px 10%;
-      text-align: center;
-    }
-    .devices img {
-      max-width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    }
-    footer {
-      background-color: #0f172a;
-      padding: 30px 10%;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #94a3b8;
-      border-top: 1px solid #334155;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlockUnlock-Pro</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <img src="logo_blockunlock.png" alt="BlockUnlock-Pro Logo" />
-    <nav>
-      <a href="#">Servizi</a>
-      <a href="#">Chi Siamo</a>
-      <a href="#">Contatta</a>
-      <a href="#">FAQ</a>
-      <a href="#">Risorse</a>
-    </nav>
+    <div class="container">
+      <h1>BlockUnlock-Pro</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Servizi</a></li>
+          <li><a href="https://wa.me/NUMEROTELEFONO?text=Richiedo%20recupero" target="_blank" class="cta-button">Richiedi Recupero</a></li>
+          <li><a href="#contact">Contatti</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <section class="hero">
-    <h1>Recupero Sicuro di Asset Digitali</h1>
-    <p>Specializzati in BTC, ETH, NFT e Web3 • Supporto Legale & Tecnico</p>
-    <button>Richiedi Recupero</button>
+
+  <!-- Main Section -->
+  <section id="home">
+    <div class="hero">
+      <h2>Recupera i tuoi asset digitali in modo sicuro e veloce</h2>
+      <p>Se hai bisogno di recuperare BTC, ETH, NFT o altro, siamo qui per aiutarti!</p>
+      <a href="https://wa.me/NUMEROTELEFONO?text=Richiedo%20recupero" class="cta-button">Richiedi Recupero</a>
+    </div>
   </section>
-  <section class="devices">
-    <img src="devices_mockup.png" alt="Strumenti BlockUnlock-Pro" />
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>Chi Siamo</h2>
+      <p>BlockUnlock-Pro è il tuo partner di fiducia per il recupero sicuro di asset digitali. Offriamo soluzioni professionali e veloci per recuperare il tuo investimento digitale.</p>
+    </div>
   </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h2>I Nostri Servizi</h2>
+      <ul>
+        <li>
+          <h3>Recupero BTC & ETH</h3>
+          <p>Soluzioni rapide per recuperare le tue criptovalute in caso di smarrimento o blocco del wallet.</p>
+        </li>
+        <li>
+          <h3>Recupero NFT</h3>
+          <p>Assistenza per il recupero di NFT, dai marketplace alle wallet.</p>
+        </li>
+        <li>
+          <h3>Supporto Tecnico</h3>
+          <p>Se hai bisogno di aiuto per sbloccare account o servizi online, siamo qui per aiutarti.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contattaci</h2>
+      <p>Se hai domande o hai bisogno di supporto, non esitare a contattarci. Siamo pronti ad aiutarti!</p>
+      <a href="https://wa.me/NUMEROTELEFONO?text=Richiedo%20recupero" class="cta-button">Contattaci su WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    © 2025 BlockUnlock-Pro. Tutti i diritti riservati. | Tel: +44 7727 818228 | info@blockunlock-pro.com
+    <div class="container">
+      <p>&copy; 2025 BlockUnlock-Pro. Tutti i diritti riservati.</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
