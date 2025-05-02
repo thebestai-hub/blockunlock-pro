@@ -1,82 +1,103 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BlockUnlock-Pro</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1>BlockUnlock-Pro</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Servizi</a></li>
-          <li><a href="https://wa.me/NUMEROTELEFONO?text=Richiedo%20recupero" target="_blank" class="cta-button">Richiedi Recupero</a></li>
-          <li><a href="#contact">Contatti</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+import React, { useState } from "react";
 
-  <!-- Main Section -->
-  <section id="home">
-    <div class="hero">
-      <h2>Recupera i tuoi asset digitali in modo sicuro e veloce</h2>
-      <p>Se hai bisogno di recuperare BTC, ETH, NFT o altro, siamo qui per aiutarti!</p>
-      <a href="https://wa.me/NUMEROTELEFONO?text=Richiedo%20recupero" class="cta-button">Richiedi Recupero</a>
-    </div>
-  </section>
+export default function Home() {
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
+  const [descrizione, setDescrizione] = useState("");
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2>Chi Siamo</h2>
-      <p>BlockUnlock-Pro è il tuo partner di fiducia per il recupero sicuro di asset digitali. Offriamo soluzioni professionali e veloci per recuperare il tuo investimento digitale.</p>
-    </div>
-  </section>
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const msg = `Ciao, sono ${nome}.\n\nEmail: ${email}\n\nDescrizione del mio caso:\n${descrizione}\n\nVorrei ricevere una consulenza da BlockUnlock-Pro. Grazie!`;
+    const encodedMsg = encodeURIComponent(msg);
+    const whatsappUrl = `https://wa.me/44772781821?text=${encodedMsg}`;
+    window.open(whatsappUrl, '_blank');
+  };
 
-  <!-- Services Section -->
-  <section id="services">
-    <div class="container">
-      <h2>I Nostri Servizi</h2>
-      <ul>
-        <li>
-          <h3>Recupero BTC & ETH</h3>
-          <p>Soluzioni rapide per recuperare le tue criptovalute in caso di smarrimento o blocco del wallet.</p>
-        </li>
-        <li>
-          <h3>Recupero NFT</h3>
-          <p>Assistenza per il recupero di NFT, dai marketplace alle wallet.</p>
-        </li>
-        <li>
-          <h3>Supporto Tecnico</h3>
-          <p>Se hai bisogno di aiuto per sbloccare account o servizi online, siamo qui per aiutarti.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
+  return (
+    <div className="min-h-screen bg-white text-gray-900">
+      {/* Hero Section */}
+      <section className="bg-gray-100 py-20 px-6 text-center">
+        <h1 className="text-4xl font-bold mb-4">Recuperiamo ciò che credevi perso</h1>
+        <p className="text-lg mb-6">Soluzioni professionali per il recupero di criptovalute smarrite o inaccessibili</p>
+        <a href="https://wa.me/44772781821?text=Ciao%2C%20sono%20interessato%20a%20una%20consulenza%20con%20BlockUnlock-Pro.%20Potete%20aiutarmi%3F" target="_blank" rel="noopener noreferrer">
+          <button className="bg-blue-600 text-white px-6 py-2 rounded-xl shadow hover:bg-blue-700">
+            Richiedi una consulenza gratuita
+          </button>
+        </a>
+      </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contattaci</h2>
-      <p>Se hai domande o hai bisogno di supporto, non esitare a contattarci. Siamo pronti ad aiutarti!</p>
-      <a href="https://wa.me/NUMEROTELEFONO?text=Richiedo%20recupero" class="cta-button">Contattaci su WhatsApp</a>
-    </div>
-  </section>
+      {/* Servizi */}
+      <section className="py-16 px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+        <div className="p-6 shadow-xl rounded-2xl border">
+          <h2 className="text-xl font-semibold mb-2">Recupero Wallet</h2>
+          <p>Accesso perso? Recuperiamo seed, 2FA, e password smarrite.</p>
+        </div>
+        <div className="p-6 shadow-xl rounded-2xl border">
+          <h2 className="text-xl font-semibold mb-2">Analisi Blockchain</h2>
+          <p>Tracciamo fondi su più reti per individuare movimenti sospetti.</p>
+        </div>
+        <div className="p-6 shadow-xl rounded-2xl border">
+          <h2 className="text-xl font-semibold mb-2">Consulenza Legale</h2>
+          <p>Supporto legale e tecnico in collaborazione con Blockchain.com.</p>
+        </div>
+      </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 BlockUnlock-Pro. Tutti i diritti riservati.</p>
-    </div>
-  </footer>
+      {/* CEO Luca Ferri Section */}
+      <section className="bg-blue-50 py-20 px-6 text-center">
+        <h2 className="text-3xl font-bold mb-4">Il nostro CEO: Luca Ferri</h2>
+        <p className="max-w-2xl mx-auto text-lg mb-6">
+          Account Manager e CEO di BlockUnlock-Pro, Luca Ferri vanta oltre 10 anni di esperienza nel settore IT e sicurezza digitale. Dopo la laurea in Informatica presso l'Università degli Studi di Milano, ha guidato progetti di recupero fondi crypto con successo internazionale. Affiliato a Blockchain.com, coordina il team tecnico con precisione e trasparenza.
+        </p>
+        <img 
+          src="/images/luca-ferri.jpg" 
+          alt="Luca Ferri CEO BlockUnlock-Pro" 
+          className="mx-auto rounded-2xl shadow-xl max-w-md"
+        />
+      </section>
 
-  <script src="script.js"></script>
-</body>
-</html>
+      {/* Chi Siamo */}
+      <section className="py-20 px-6 text-center">
+        <h2 className="text-2xl font-bold mb-4">Chi Siamo</h2>
+        <p className="max-w-3xl mx-auto text-lg">
+          BlockUnlock-Pro è una realtà italiana specializzata nel recupero di criptovalute, con un team multidisciplinare composto da esperti in blockchain, sicurezza informatica e diritto delle criptovalute. Ogni operazione viene gestita in sicurezza, nel rispetto delle normative vigenti, con l’obiettivo di proteggere i tuoi beni digitali e offrirti soluzioni concrete anche nei casi più complessi.
+        </p>
+      </section>
+
+      {/* Contatti */}
+      <section className="py-20 px-6 bg-gray-100 text-center">
+        <h2 className="text-2xl font-bold mb-4">Contattaci</h2>
+        <p className="mb-6">Hai perso l'accesso al tuo wallet? Parliamone subito.</p>
+        <form onSubmit={handleSubmit} className="max-w-xl mx-auto grid gap-4">
+          <input 
+            type="text" 
+            placeholder="Nome" 
+            value={nome} 
+            onChange={(e) => setNome(e.target.value)} 
+            className="border rounded-xl p-3" 
+          />
+          <input 
+            type="email" 
+            placeholder="Email" 
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)} 
+            className="border rounded-xl p-3" 
+          />
+          <textarea 
+            placeholder="Descrivi il tuo caso" 
+            value={descrizione} 
+            onChange={(e) => setDescrizione(e.target.value)} 
+            className="border rounded-xl p-3 h-32" 
+          />
+          <button type="submit" className="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700">
+            Invia Richiesta
+          </button>
+        </form>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-white text-center py-6 text-sm text-gray-500">
+        © 2025 BlockUnlock-Pro | Tutti i diritti riservati
+      </footer>
+    </div>
+  );
+}
