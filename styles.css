@@ -1,143 +1,107 @@
-/* Global Styles */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f9f9f9;
   color: #333;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .container {
-  width: 80%;
+  width: 90%;
+  max-width: 960px;
   margin: 0 auto;
+  padding: 40px 0;
 }
 
-/* Header */
-header {
-  background-color: #00796b;
-  color: white;
-  padding: 20px 0;
-}
-
-header h1 {
-  text-align: center;
-  font-size: 36px;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
-  font-size: 18px;
-}
-
-.cta-button {
-  background-color: #25d366; /* WhatsApp color */
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 18px;
-  transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-  background-color: #128c7e;
-}
-
-/* Hero Section */
 .hero {
-  background: #00796b;
+  background: #0f172a;
   color: white;
   text-align: center;
-  padding: 50px 0;
+  padding: 80px 20px;
 }
 
-.hero h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.3em;
 }
 
 .hero p {
-  font-size: 20px;
-  margin-bottom: 30px;
+  font-size: 1.2em;
 }
 
-/* About Section */
-#about {
-  padding: 50px 0;
-  background-color: #ffffff;
-}
-
-#about h2 {
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-/* Services Section */
-#services {
-  padding: 50px 0;
-  background-color: #f4f4f4;
-}
-
-#services h2 {
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-#services ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-}
-
-#services ul li {
-  width: 30%;
-}
-
-#services ul li h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-/* Contact Section */
-#contact {
-  padding: 50px 0;
-  background-color: #ffffff;
-  text-align: center;
-}
-
-#contact h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-/* Footer */
-footer {
-  background-color: #00796b;
+.cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #3b82f6;
   color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.intro p,
+.ceo p,
+.contact p {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.services .grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 20px auto 0;
+  display: grid;
+  gap: 15px;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+button {
+  background: #3b82f6;
+  color: white;
+  padding: 12px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+footer {
+  background: #e5e7eb;
   text-align: center;
   padding: 20px 0;
-}
-
-footer p {
-  font-size: 14px;
+  font-size: 0.9em;
 }
